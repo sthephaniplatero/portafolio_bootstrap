@@ -1,69 +1,130 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sthephani Web Developer Portafolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='pink' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+    </style>
   </head>
-  <body>
-    <!--Nav Bar-->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Sthephani Web Developer</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre Mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Proyectos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://sthephaniplatero.github.io/kodigo/producto/index.html">Landing Page Producto</a></li>
-            <li><a class="dropdown-item" href=" https://sthephaniplatero.github.io/KodigoProjects/siman/index.html">Siman.com</a></li>
-            <li><a class="dropdown-item" href="#">Proyecto Universitario</a></li>
+  <body class="bg-black d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-black navbar-dark px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Sthephani Platero</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-light" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#">Acerca de Mi</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">Proyectos</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                <li><a class="dropdown-item" href="https://sthephaniplatero.github.io/kodigo/producto/index.html">Landing Page Producto</a></li>
+                <li><hr class="dropdown-divider bg-light" /></li>
+                <li><a class="dropdown-item" href="https://sthephaniplatero.github.io/KodigoProjects/siman/index.html">Siman.com</a></li>
+                <li><hr class="dropdown-divider bg-light" /></li>
+                <li><a class="dropdown-item" href="#">Proyecto Universitario</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link text-light" href="#">Contacto</a></li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        </div>
+      </div>
+    </nav>
 
-<!--Jumbotron-->
+    <!-- Jumbotron -->
+    <main class="flex-grow-1">
+      <div class="container-fluid p-0 m-0">
+        <div class="row g-0 min-vh-100">
 
-<div class="container-fluid p-0 m-0">
-  <div class="row g-0" style="height: 100vh;">
-    
-    <!-- Columna de imagen -->
-    <div class="col-md-4 d-flex align-items-center justify-content-center bg-dark">
-      <img src="img/hero.png" alt="Foto de Sthephani Platero" class="img-fluid h-100" style="object-fit: cover; width: 100%;">
-    </div>
+          <!-- Columna 1 -->
+          <div class="col-md-4 d-flex flex-column align-items-center justify-content-center bg-black p-4 text-center text-md-start">
+           <img src="img/imagen.jpg" alt="Foto de Sthephani Platero"
+                class="mb-4"
+                style="width: 320px; height: 320px; object-fit: cover; border-radius: 50%; border: 5px solid #f8c8dc; box-shadow: 0 0 10px #f8c8dc;" />
+           <ul class="list-unstyled text-light w-75 mx-auto mx-md-0" style="font-family: 'Poppins', sans-serif; font-size: 1rem; border: 1px solid #d9d6d7; border-radius: 10px; padding: 20px; background-color: rgba(255, 255, 255, 0.05); box-shadow: 0 0 10px rgba(248, 200, 220, 0.2);">
+             <li class="mb-2">🌐 <strong>HTML, CSS, JS</strong></li>
+             <li class="mb-2">🎨 <strong>Bootstrap</strong></li>
+             <li class="mb-2">📱 <strong>Diseño responsivo</strong></li>
+             <li>🛠 <strong>Git / GitHub</strong></li>
+           </ul>
+         </div>
 
-    <!-- Columna de texto -->
-    <div class="col-md-8 p-5 bg-body-tertiary d-flex flex-column justify-content-center h-100">
-      <h1 class="display-5 fw-bold">Sthephani Platero</h1> 
-      <p class="fs-4">
-        Motivated and persistent software developer with background in customer service with a desire to grow in the tech industry. Passionate about solving problems, learning new technologies, and creating meaningful solutions. Seeking opportunities where I can continue to develop my technical abilities while contributing positively to collaborative and innovative projects.
-      </p>
-      <button class="btn btn-primary btn-lg mt-3" type="button">Contáctame</button> 
-    </div>
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-8 text-light d-flex flex-column justify-content-center p-4 text-center text-md-start">
+            <img src="img/logo1.png" alt="logo" class="mb-2 mx-auto mx-md-0" style="max-width: 300px;" />
+            <p class="fs-4 m-0" style="color: #f5f2f2;">
+              Desarrollador de software motivado y persistente, con experiencia en atención al cliente y un fuerte deseo de crecer en 
+              la industria tecnológica. Apasionado por resolver problemas, aprender nuevas tecnologías y crear soluciones significativas. 
+            </p>
+            <button class="btn btn-outline-light btn-lg mt-3 mx-auto mx-md-0" type="button">Contáctame</button>
+          </div>
 
-  </div>
-</div>
+        </div>
+      </div>
+    </main>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container">
+        <div class="row text-center text-md-start">
+
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-6 mb-3">
+            <h5>Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Proyectos</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+        <div class="col-12 col-md-6 mb-3 text-start">
+          <h5>Contacto</h5>
+          <p>Email: <a href="mailto:platerosthephani@gmail.com" class="text-white">platerosthephani@gmail.com</a></p>
+          <div class="d-flex justify-content-start gap-3">
+            <a href="https://github.com/sthephaniplatero" target="_blank" class="text-white fs-4">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sthephaniplatero" target="_blank" class="text-white fs-4">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center mt-3">
+            <small>&copy; 2025 Sthephani Platero. Todos los derechos reservados.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
